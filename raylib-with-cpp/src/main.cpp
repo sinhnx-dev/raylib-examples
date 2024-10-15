@@ -10,7 +10,7 @@ int main(int countArgs, char** args)
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, WINDOW_TITLE);
     SetTargetFPS(60);
 
-    // Texture2D texture = LoadTexture(ASSETS_PATH"test.png");
+    Texture2D texture = LoadTexture(ASSETS_PATH"avocado.png");
 
     while (!WindowShouldClose())
     {
@@ -18,9 +18,9 @@ int main(int countArgs, char** args)
 
         ClearBackground(RAYWHITE);
 
-        // const int texture_x = SCREEN_WIDTH / 2 - texture.width / 2;
-        // const int texture_y = SCREEN_HEIGHT / 2 - texture.height / 2;
-        // DrawTexture(texture, texture_x, texture_y, WHITE);
+        const int texture_x = SCREEN_WIDTH / 2 - texture.width / 2;
+        const int texture_y = SCREEN_HEIGHT / 2 - texture.height / 2 - 200;
+        DrawTexture(texture, texture_x, texture_y, WHITE);
 
         const char* text = "raylib with c++ programming language!";
         const Vector2 text_size = MeasureTextEx(GetFontDefault(), text, 40, 2);

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.11)
 
 project(raylib-with-cpp LANGUAGES CXX)
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
 # Adding Raylib
 include(FetchContent)
